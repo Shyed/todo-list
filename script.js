@@ -12,7 +12,25 @@ addBtn.addEventListener("click", () => {
 
   // Create new task item
   const li = document.createElement("li");
-  li.textContent = taskText;
+
+  // Changes 05/08/2026 adding checkboxes
+  const checkbox = document.createElement("input"); 
+
+  // Set the input type to checkbox
+  checkbox.type = "checkbox"; 
+
+  // Create a <span> element to hold task text
+  const taskSpan = document.createElement("span"); 
+
+  // Put the user's typed task inside the span
+  taskSpan.textContent = taskText; 
+
+  // Add the checkbox into the <li>
+  li.appendChild(checkbox); '
+
+  // Add the task text into the <li>
+  li.appendChild(taskSpan); 
+  
 
   // Toggle completed on click
   li.addEventListener("click", () => {
