@@ -26,7 +26,7 @@ addBtn.addEventListener("click", () => {
   taskSpan.textContent = taskText; 
 
   // Add the checkbox into the <li>
-  li.appendChild(checkbox); '
+  li.appendChild(checkbox); 
 
   // Add the task text into the <li>
   li.appendChild(taskSpan); 
