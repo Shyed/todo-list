@@ -44,8 +44,8 @@ li {
   padding: 0.75rem;
   border-radius: 6px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 10px;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
@@ -61,4 +61,5 @@ li.completed {
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
   cursor: pointer;
+  margin-left: auto;
 }
