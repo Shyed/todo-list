@@ -5,6 +5,7 @@ const taskList = document.getElementById("task-list");
 
 // Event: Add task on button click
 addBtn.addEventListener("click", () => {
+
   const taskText = taskInput.value.trim();
 
   // Ignore empty input
@@ -13,45 +14,41 @@ addBtn.addEventListener("click", () => {
   // Create new task item
   const li = document.createElement("li");
 
-  // Changes 05/08/2026 adding checkboxes
-  const checkbox = document.createElement("input"); 
+  // Create checkbox
+  const checkbox = document.createElement("input");
+  checkbox.type = "checkbox";
 
-  // Set the input type to checkbox
-  checkbox.type = "checkbox"; 
+  // Create task text span
+  const taskSpan = document.createElement("span");
+  taskSpan.textContent = taskText;
 
-  // Create a <span> element to hold task text
-  const taskSpan = document.createElement("span"); 
+  // Add checkbox + text into li
+  li.appendChild(checkbox);
+  li.appendChild(taskSpan);
 
-  // Put the user's typed task inside the span
-  taskSpan.textContent = taskText; 
-
-  // Add the checkbox into the <li>
-  li.appendChild(checkbox); 
-
-  // Add the task text into the <li>
-  li.appendChild(taskSpan); 
-  
-
-  // Toggle completed on click
+  // Checkbox toggles completed state
   checkbox.addEventListener("change", () => {
     li.classList.toggle("completed");
   });
 
-  // Delete button for task
+  // Create delete button
   const deleteBtn = document.createElement("button");
   deleteBtn.textContent = "X";
   deleteBtn.className = "delete-btn";
+
+  // Delete task
   deleteBtn.addEventListener("click", (e) => {
-    e.stopPropagation(); // prevent toggle when deleting
+    e.stopPropagation();
     taskList.removeChild(li);
   });
 
-  // Append delete button to task
+  // Add delete button to li
   li.appendChild(deleteBtn);
 
-  // Add to list
+  // Add li to task list
   taskList.appendChild(li);
 
   // Clear input
   taskInput.value = "";
+
 });
