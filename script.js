@@ -33,7 +33,7 @@ addBtn.addEventListener("click", () => {
   
 
   // Toggle completed on click
-  li.addEventListener("change", () => {
+  checkbox.addEventListener("change", () => {
     li.classList.toggle("completed");
   });
 
