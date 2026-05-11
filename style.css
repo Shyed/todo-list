@@ -9,7 +9,12 @@ body {
 }
 
 header { 
-  margin-bottom: 2rem; 
+  width: 100%;
+  text-align: center; 
+  background: white; 
+  padding: 1rem 0; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1)
+  margin-bottom: 2rem;
 }
 
 header p {
@@ -85,8 +90,10 @@ li input[type="checkbox"] {
 }
 
 footer {
-  margin-top: 2rem; 
-  font-size: 0.9rem;
-  color: gray; 
+  width: 100%;
   text-align: center; 
+  background: white; 
+  padding: 1rem 0; 
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1)
+  margin-top: auto;
 }
