@@ -6,7 +6,6 @@ body {
   min-height: 100vh; /* makes page full full screen height */
   display: flex; /* enables flexbox layout */
   flex-direction: column; /* stacks items vertically */
-  align-items: center; /* centers items horizontally */
 }
 
 .logo{
