@@ -33,6 +33,7 @@ header {
   display: flex; 
   flex-direction: column;
   align-item: center; 
+}
 
 header p {
   color: gray; /* gray text color */
@@ -127,7 +128,7 @@ footer {
   width: 100%; /* full width */
   text-align: center; /* center footer text */
   background: white; /* white background */ 
-  padding: 1rem 0; /* space inside footer */
+  padding: 1.5rem 0; /* space inside footer */
   box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* shadow above footer */
   margin-top: auto; /* push footer to bottom of page */
 }
