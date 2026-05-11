@@ -8,18 +8,32 @@
 </head>
 <body>
 
-  <!-- Page title -->
-  <h1>To-Do List</h1>
+  <!-- Main app container -->
+  <div class="todo-container">
 
-  <!-- Input area to add new tasks -->
-  <div class="input-container">
-    <input type="text" id="task-input" placeholder="Enter a new task..." />
-    <button id="add-btn">Add</button>
+  <!-- Header section -->
+    <header>  
+      <!-- Page title -->
+      <h1>To-Do List</h1>
+      <p>Stay organized and productive</p>
+    </header>
+
+    <!-- Input area to add new tasks -->
+    <div class="input-container">
+      <input type="text" id="task-input" placeholder="Enter a new task..." />
+      <button id="add-btn">Add</button>
+    </div>
+
+    <!-- Task list display area -->
+    <ul id="task-list"></ul>
+
+    <!-- Footer -->
+    <footer>
+      <p>Built with HTML, CSS, and JavaScript</p>
+      <p> @ 2026 Sheila Demonteverde </p>
+    </footer>
   </div>
 
-  <!-- Task list display area -->
-  <ul id="task-list"></ul>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
