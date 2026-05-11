@@ -1,17 +1,18 @@
+/* Main Page styling */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0; 
-  min-height: 100vh;
-  display: flex; 
-  flex-direction: column; 
-  align-items: center;
+  font-family: Arial, sans-serif;   /* sets website font */
+  background-color: #f4f4f4; /* light gray page background */
+  margin: 0; /* removes browser default spacing */
+  min-height: 100vh; /* makes page full full screen height */
+  display: flex; /* enables flexbox layout */
+  flex-direction: column; /* stacks items vertically */
+  align-items: center; /* centers items horizontally */
 }
 
 .logo{
-  width: 80px;
-  height: auto; 
-  margin-bottom: 0.5rem; 
+  width: 80px; /* logo size */
+  height: auto; /* keeps image proportions correct */
+  margin-bottom: 0.5rem; /* space below logo */
 }
 
 header { 
