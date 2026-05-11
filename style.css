@@ -5,6 +5,15 @@ body {
   padding: 2rem;
 }
 
+header { 
+  margin-bottom: 2rem; 
+}
+
+header p {
+  color: gray; 
+  margin-top: -10px; 
+}
+
 h1 {
   margin-bottom: 1.5rem;
 }
@@ -56,6 +65,10 @@ li span {
 
 li input[type="checkbox"] {
   margin: 0;
+  width: 18px;
+  height: 18px; 
+  accent-color: #0077ff; 
+  cursor: pointer;
 }
 
 .delete-btn {
@@ -66,4 +79,11 @@ li input[type="checkbox"] {
   border-radius: 4px;
   cursor: pointer;
   margin-left: auto;
+}
+
+footer {
+  margin-top: 2rem; 
+  font-size: 0.9rem;
+  color: gray; 
+  text-align: center; 
 }
