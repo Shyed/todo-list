@@ -16,110 +16,118 @@ body {
 }
 
 header { 
-  width: 100%;
-  background: white; 
-  padding: 2rem 1rem; 
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  margin-bottom: 2rem;
+  width: 100%; /* full width across page*/
+  background: white; /* white background */
+  padding: 2rem 1rem; /* space inside header*/
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* soft shadow under header */
+  margin-bottom: 2rem; /* space below header */
+  
+  /* flexbox layout*/
   display: flex; 
   flex-direction: column;
   align-items: center; 
   text-align: center;  
 }
 
+.header-text{
+  display: flex; 
+  flex-direction: column;
+  align-item: center; 
+
 header p {
-  color: gray; 
-  margin-top: -10px; 
+  color: gray; /* gray text color */
+  margin-top: -10px;  /* pull slightly upward */
 }
 
 header h1 {
-  margin: 0; 
-  font-size: 2.5rem;
+  margin: 0;  /* remove default spacing */
+  font-size: 2.5rem; /* large title size */
 }
 
 header h2 {
-  margin-top: 0.25rem; 
-  color: #0077ff; 
-  font-weight: normal; 
-  font-size: 1.2rem;
+  margin-top: 0.25rem; /* small spacing above */
+  color: #0077ff; /* blue accent color */ 
+  font-weight: normal; /* removes bold font */
+  font-size: 1.2rem; /* subtitle size */
 }
 
 .project-description {
-  max-width: 500px;
-  margin-top: 1rem; 
-  color: #666;
-  line-height: 1.5; 
-  font-size: 0.95rem; 
+  max-width: 500px; /* prevents text from stretching too wide */
+  margin-top: 1rem; /* space above description */
+  color: #666; /* soft gray text */
+  line-height: 1.5; /* adds spacing between text lines */
+  font-size: 0.95rem; /* slightly smaller font */
 }
 
 .input-container {
-  margin-bottom: 2rem;
+  margin-bottom: 2rem; /* space below input section */
 }
 
 input {
-  padding: 0.5rem;
-  font-size: 1rem;
-  width: 60%;
-  max-width: 300px;
+  padding: 0.5rem; /*space inside input */
+  font-size: 1rem; /* text size */
+  width: 60%; /*input width */
+  max-width: 300px; /* prevent input from becoming too large */ 
 }
 
 button {
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  margin-left: 0.5rem;
-  background-color: #0077ff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  padding: 0.5rem 1rem; /* space inside button */
+  font-size: 1rem; /* text size */
+  margin-left: 0.5rem; /* space left button */
+  background-color: #0077ff; /* blue button background */
+  color: white; /* white text */
+  border: none; /* remove default border */
+  border-radius: 5px; /* rounded corners */
+  cursor: pointer; /* mouse pointer on hover */
 }
 
 ul {
-  list-style: none;
-  padding: 0;
-  max-width: 400px;
-  margin: auto;
+  list-style: none; /* removes bullet points */
+  padding: 0; /* removes default spacing */
+  max-width: 400px; /* max width */
+  margin: auto; /* center horizontally */
 }
 
 li {
-  background: white;
-  margin-bottom: 0.5rem;
-  padding: 0.75rem;
-  border-radius: 6px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  background: white; /* white task background */
+  margin-bottom: 0.5rem; /* space between task */
+  padding: 0.75rem; /* space inside task */
+  border-radius: 6px; /* rounded corners */
+  display: flex; /* flexbox layout */
+  align-items: center; /* vertically center items */
+  gap: 10px; /* space between checkbox/text/button */
+  box-shadow: 0 0 5px rgba(0,0,0,0.1); /* soft card shadow */
 }
 
 li span {
-  flex: 1; 
-  text-align: left;
+  flex: 1;  /* takes up remaining middle space */
+  text-align: left; /* aligh text left */
 }
 
 li input[type="checkbox"] {
-  margin: 0;
-  width: 18px;
-  height: 18px; 
-  accent-color: #0077ff; 
-  cursor: pointer;
+  margin: 0; /* remove default margin */
+  /* Checkbox size */
+  width: 18px; 
+  height: 18px;  
+  accent-color: #0077ff;  /* blue checkbox color */
+  cursor: pointer; /* pointer cursor */
 }
 
 .delete-btn {
-  background: crimson;
-  color: white;
-  border: none;
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-left: auto;
+  background: crimson; /* red background */
+  color: white; /* white text */
+  border: none; /* remove border */
+  padding: 0.25rem 0.5rem; /* space inside button */
+  border-radius: 4px; /* rounded corners */
+  cursor: pointer; /* pointer cursor */
+  margin-left: auto; /* push button to far right */
 }
 
 footer {
-  width: 100%;
-  text-align: center; 
-  background: white; 
-  padding: 1rem 0; 
-  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
-  margin-top: auto;
+  width: 100%; /* full width */
+  text-align: center; /* center footer text */
+  background: white; /* white background */ 
+  padding: 1rem 0; /* space inside footer */
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* shadow above footer */
+  margin-top: auto; /* push footer to bottom of page */
 }
