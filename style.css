@@ -49,9 +49,13 @@ li {
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
-li.completed {
-  text-decoration: line-through;
-  color: gray;
+li span {
+  flex: 1; 
+  text-align: left;
+}
+
+li input[type="checkbox"] {
+  margin: 0;
 }
 
 .delete-btn {
