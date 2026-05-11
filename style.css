@@ -5,7 +5,7 @@ body {
   min-height: 100vh;
   display: flex; 
   flex-direction: column; 
-  align-item: center;
+  align-items: center;
 }
 
 .logo{
@@ -18,10 +18,10 @@ header {
   width: 100%;
   background: white; 
   padding: 2rem 1rem; 
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1)
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   margin-bottom: 2rem;
   display: flex; 
-  flex-rection: column;
+  flex-direction: column;
   align-items: center; 
   text-align: center;  
 }
@@ -119,6 +119,6 @@ footer {
   text-align: center; 
   background: white; 
   padding: 1rem 0; 
-  box-shadow: 0 -2px 5px rgba(0,0,0,0.1)
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
   margin-top: auto;
 }
